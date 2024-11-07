@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbDni = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -44,12 +44,12 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbDni
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbDni.Location = new System.Drawing.Point(91, 26);
+            this.tbDni.Name = "tbDni";
+            this.tbDni.Size = new System.Drawing.Size(100, 20);
+            this.tbDni.TabIndex = 0;
             // 
             // label1
             // 
@@ -92,7 +92,7 @@
             // 
             // txtCtacte
             // 
-            this.txtCtacte.Location = new System.Drawing.Point(91, 84);
+            this.txtCtacte.Location = new System.Drawing.Point(120, 85);
             this.txtCtacte.Name = "txtCtacte";
             this.txtCtacte.Size = new System.Drawing.Size(100, 20);
             this.txtCtacte.TabIndex = 5;
@@ -100,7 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 68);
+            this.label2.Location = new System.Drawing.Point(31, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 6;
@@ -156,9 +156,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(12, 87);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(102, 17);
             this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Nro Cuenta Cte:";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -177,7 +177,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbDni);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -189,7 +189,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbDni;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

@@ -130,14 +130,21 @@ namespace Ejercicio1
                 if (cc != null)
                 {
                     t = new Pago(cc);
-                    
                 }
             }
             else
             {
-                int dni = Convert.ToInt32(txtCtacte.Text);
+                int dni = Convert.ToInt32(tbDni.Text);
+                try
+                {
+                    if (dni < 3000000 || dni > 45000000)
+                        throw new DniInvalidoException("ERROR DNI INVALIDO");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERROR: DNI FUERA DE RANGO PERMITIDO");
+                } 
                 t = new Cliente(dni);
-
             }
             if (t != null)
             {
